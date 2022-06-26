@@ -18,12 +18,10 @@
   },
   "main": "src/electron-main.js",
   "scripts": {
-    "react:start": "set PORT=3040 && react-scripts start",
-    "react:build": "react-scripts build",
-    "react:test": "react-scripts test --env=jsdom",
-    "react:eject": "react-scripts eject",
-    "electron:dev": "electron .",
-    "build": "react:build && serve -s build -l 1015 && electron:start"
+    "dev": "sh ./scripts/dev-build.sh",
+    "script:build-react": "react-scripts build",
+    "script:serve": "serve -s build -l 3040",
+    "script:electron": "electron ."
   },
   "eslintConfig": {
     "extends": [
